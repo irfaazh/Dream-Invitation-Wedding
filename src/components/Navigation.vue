@@ -45,12 +45,12 @@
       :class="{ expand: flat }"
     >
       
-      <v-spacer />
-      <v-app-bar-nav-icon
-        @click.stop="drawer = !drawer"
-        class="mr-0 dark-slate-blue-text hover-white float-right"
-        v-if="isXs"
-      />
+    <v-spacer />
+<v-app-bar-nav-icon
+  @click.stop="drawer = !drawer"
+  class="dark-slate-blue-text hover-white" style="margin-right: -4rem;"
+  v-if="isXs"
+/>
       <div v-else>
         <v-btn text @click="$vuetify.goTo('#hero')" class="nav-btn">
           <span class="mr-2 dark-slate-blue-text hover-white">Home</span>
@@ -67,13 +67,6 @@
 </template>
 
 <style scoped>
-.w-100 {
-  width: 100%;
-}
-.float-right {
-  float: right;
-}
-
 .v-toolbar {
   transition: 0.6s;
 }
