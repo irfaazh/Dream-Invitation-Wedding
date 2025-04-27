@@ -5,16 +5,12 @@
       app
       temporary
       dark
-      color="red"
+      color="#0A1929"
     >
       <v-list>
         <v-list-item>
-          <v-list-item-avatar>
-            <img src="@/assets/img/logo-small.png" alt="Logo" />
-          </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title"> SideBar</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -31,6 +27,7 @@
           <v-list-item-icon class="justify-center">
             <v-icon>{{ icon }}</v-icon>
           </v-list-item-icon>
+
           <v-list-item-content>
             <v-list-item-title class="subtitile-1">{{
               text
@@ -51,7 +48,7 @@
       <v-spacer />
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
-        class="mr-4 dark-slate-blue-text hover-white"
+        class="mr-0 dark-slate-blue-text hover-white float-right"
         v-if="isXs"
       />
       <div v-else>
@@ -70,6 +67,13 @@
 </template>
 
 <style scoped>
+.w-100 {
+  width: 100%;
+}
+.float-right {
+  float: right;
+}
+
 .v-toolbar {
   transition: 0.6s;
 }
@@ -116,9 +120,9 @@ export default {
     items: [
       ["mdi-home-outline", "Home", "#hero"],
       ["mdi-information-outline", "Features", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
+      // ["mdi-download-box-outline", "Download", "#download"],
       ["mdi-currency-usd", "Pricing", "#pricing"],
-      ["mdi-email-outline", "Contact us", "#contact"],
+      // ["mdi-email-outline", "Contact us", "#contact"],
     ],
   }),
   props: {

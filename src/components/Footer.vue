@@ -21,7 +21,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Dream Your Wedding</strong>
+        {{ new Date().getFullYear() }} — <strong>Dream Invitation Your Wedding</strong>
       </v-card-text>
     </v-card>
   </v-footer>
