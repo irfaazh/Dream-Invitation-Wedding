@@ -4,9 +4,10 @@
     <v-main class="pt-0">
       <home />
       <about />
-      <download />
-      <!-- <pricing /> -->
-      <contact />
+      <!-- <download /> -->
+      <pricing />
+      <!-- <contact /> -->
+       <footer></footer>
     </v-main>
     <v-scale-transition>
       <v-btn

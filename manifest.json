@@ -1,0 +1,18 @@
+{
+    "short_name": "Dream",
+    "name": "Dream Invitation Wedding",
+    "theme_color": "#fff",
+    "background_color": "#103AB9",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "bgHero.jpg",
+        "sizes": "72x72",
+        "type": "image/jpg"
+      }
+    ]
+  }
+  

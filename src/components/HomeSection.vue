@@ -1,67 +1,17 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/img/bgHero.jpg" height="750">
+    <v-parallax dark src="@/assets/img/bgroundd.png" height="750">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Stoic Solutions</h1>
-              <h1 class="font-weight-light">
-                Elevating Software, Mastering Tranquility in Technology.
-              </h1>
-              <v-btn
-                rounded
-                outlined
-                large
-                dark
-                @click="$vuetify.goTo('#features')"
-                class="mt-5"
-              >
-                Know more
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+              <h1 class="display-2 font-weight-bold mb-4 dark-slate-blue-text">Dream Wedding Invitation</h1>
+              <h1 class="font-weight-light dark-slate-blue-text">Wujudkan Undangan Digital Bersama Kami</h1>
+              <p class="dark-slate-blue-text">Proses Cepat - Hemat Biaya - Hemat Waktu</p>
+              <v-btn roundedoutlinedlarge class="mt-5 dark-slate-blue-button" @click="$vuetify.goTo('#features')">
+               <span class="dark-slate-blue-text">Know more</span>
+               <v-icon class="ml-2 dark-slate-blue-text">mdi-arrow-down</v-icon>
               </v-btn>
-              <div class="video d-flex align-center py-4">
-                <a @click.stop="dialog = true" class="playBut">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                    x="0px"
-                    y="0px"
-                    width="60px"
-                    height="60px"
-                    viewBox="0 0 213.7 213.7"
-                    enable-background="new 0 0 213.7 213.7"
-                    xml:space="preserve"
-                  >
-                    <polygon
-                      class="triangle"
-                      id="XMLID_18_"
-                      fill="none"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      points="73.5,62.5 148.5,105.8 73.5,149.1 "
-                    />
-
-                    <circle
-                      class="circle"
-                      id="XMLID_17_"
-                      fill="none"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      cx="106.8"
-                      cy="106.8"
-                      r="103.3"
-                    />
-                  </svg>
-                </a>
-                <p class="subheading ml-2 mb-0">Watch the video</p>
-              </div>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
@@ -101,8 +51,8 @@
                     class="d-block ml-auto mr-auto"
                     :class="{ 'zoom-efect': hover }"
                   ></v-img>
-                  <h1 class="font-weight-regular">{{ feature.title }}</h1>
-                  <h4 class="font-weight-regular subtitle-1">
+                  <h1 class="font-weight-regular dark-slate-blue-text">{{ feature.title }}</h1>
+                  <h4 class="font-weight-regular subtitle-1 dark-slate-blue-text">
                     {{ feature.text }}
                   </h4>
                 </v-card>
@@ -134,30 +84,8 @@ export default {
       dialog: false,
       videoId: "i8IvvHJssWE",
       features: [
-        {
-          img: require("@/assets/img/icon2.png"),
-          title: "Clean Design",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          img: require("@/assets/img/icon1.png"),
-          title: "Secure Data",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          img: require("@/assets/img/icon3.png"),
-          title: "Open code",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-      ],
-    };
-  },
-  watch: {
-    dialog(value) {
-      if (!value) {
-        this.pause();
-      }
-    },
+    ]
+    }
   },
   methods: {
     ready(event) {
@@ -165,27 +93,14 @@ export default {
     },
     playing(event) {
       // The player is playing a video.
-    },
-    change() {
-      // when you change the value, the player will also change.
-      // If you would like to change `playerVars`, please change it before you change `videoId`.
-      // If `playerVars.autoplay` is 1, `loadVideoById` will be called.
-      // If `playerVars.autoplay` is 0, `cueVideoById` will be called.
-      this.videoId = "another video id";
-    },
-    stop() {
-      this.player.stopVideo();
-    },
-    pause() {
-      this.player.pauseVideo();
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 .circle {
-  stroke: white;
+  stroke: blue;
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
   -webkit-transition: all 0.5s ease-in-out;
@@ -240,6 +155,10 @@ export default {
 </style>
 
 <style>
+.dark-slate-blue-text {
+  color: #483D8B !important;
+}
+
 .btn-play {
   transition: 0.2s;
 }

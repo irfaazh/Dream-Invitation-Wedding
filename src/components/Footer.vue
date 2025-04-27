@@ -21,39 +21,35 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Stoic Solutions</strong>
+        {{ new Date().getFullYear() }} — <strong>Dream Your Wedding</strong>
       </v-card-text>
     </v-card>
   </v-footer>
 </template>
-
-<style scoped>
-.v-card {
-  width: 100%;
-}
-</style>
 
 <script>
 export default {
   data: () => ({
     icons: [
       {
-        text: "mdi-facebook",
-        link: "",
-      },
-      {
-        text: "mdi-twitter",
-        link: "",
-      },
-      {
-        text: "mdi-linkedin",
-        link: "",
-      },
-      {
         text: "mdi-instagram",
-        link: "https://instagram.com/joabson_arley/",
+        link: "https://instagram.com/_irfaazh/",
+      },
+      {
+        text: "mdi-whatsapp",
+        link: "https://wa.me/6281212651576", // Ganti dengan nomor WhatsApp Anda
+      },
+      {
+        text: "mdi-email",
+        link: "mailto:irfazhafir0@gmail.com", // Ganti dengan email Anda
       },
     ],
   }),
 };
 </script>
+
+<style scoped>
+.v-card {
+  width: 100%;
+}
+</style>

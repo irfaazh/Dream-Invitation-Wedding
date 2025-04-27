@@ -5,7 +5,7 @@
       app
       temporary
       dark
-      src="@/assets/img/bgDrawer.jpg"
+      color="red"
     >
       <v-list>
         <v-list-item>
@@ -44,34 +44,25 @@
       app
       :color="color"
       :flat="flat"
-      dark
       class="px-15"
       :class="{ expand: flat }"
     >
-      <v-toolbar-title>
-        <v-img src="@/assets/img/logo-small.png" max-width="50px" />
-      </v-toolbar-title>
+      
       <v-spacer />
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
-        class="mr-4"
+        class="mr-4 dark-slate-blue-text hover-white"
         v-if="isXs"
       />
       <div v-else>
-        <v-btn text @click="$vuetify.goTo('#hero')">
-          <span class="mr-2">Home</span>
+        <v-btn text @click="$vuetify.goTo('#hero')" class="nav-btn">
+          <span class="mr-2 dark-slate-blue-text hover-white">Home</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">Features</span>
+        <v-btn text @click="$vuetify.goTo('#features')" class="nav-btn">
+          <span class="mr-2 dark-slate-blue-text hover-white">Features</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Download</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Pricing</span>
-        </v-btn>
-        <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contact us</span>
+        <v-btn text @click="$vuetify.goTo('#pricing')" class="nav-btn">
+          <span class="mr-2 dark-slate-blue-text hover-white">Pricing</span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -86,6 +77,34 @@
 .expand {
   height: 80px !important;
   padding-top: 10px;
+}
+
+.dark-slate-blue-text {
+  color: #483D8B !important;
+  transition: color 0.3s ease;
+}
+
+.hover-white:hover {
+  color: white !important;
+}
+
+.nav-btn::before {
+  background-color: rgba(72, 61, 139, 0.1) !important;
+}
+
+.nav-btn:hover::before {
+  opacity: 1 !important;
+  background-color: rgba(72, 61, 139, 0.7) !important;
+}
+
+.contact-btn {
+  border-color: #483D8B !important;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  border-color: white !important;
+  background-color: rgba(72, 61, 139, 0.7) !important;
 }
 </style>
 
