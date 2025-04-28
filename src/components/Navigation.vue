@@ -56,10 +56,10 @@
           <span class="mr-2 dark-slate-blue-text hover-white">Home</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')" class="nav-btn">
-          <span class="mr-2 dark-slate-blue-text hover-white">Features</span>
+          <span class="mr-2 dark-slate-blue-text hover-white">About</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#pricing')" class="nav-btn">
-          <span class="mr-2 dark-slate-blue-text hover-white">Pricing</span>
+          <span class="mr-2 dark-slate-blue-text hover-white">Price</span>
         </v-btn>
       </div>
     </v-app-bar>

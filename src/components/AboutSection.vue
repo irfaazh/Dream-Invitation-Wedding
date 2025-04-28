@@ -5,7 +5,7 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="7">
-              <h1 class="font-weight-light display-2">Kelebihan Kami</h1>
+              <h1 class="font-weight-light display-2 dark-slate-blue-text">Kelebihan Kami</h1>
               <v-row>
                 <v-col cols="12" class="d-flex align-center">
                   
