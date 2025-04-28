@@ -6,7 +6,7 @@
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
               <h1 class="display-2 font-weight-bold mb-4 dark-slate-blue-text">Dream Wedding Invitation</h1>
-              <h1 class="font-weight-light dark-slate-blue-text">Wujudkan Undangan Digital Bersama Kami</h1>
+              <h1 class="font-weight-light dark-slate-blue-text">Wujudkan Impian Undangan Digital Bersama Kami</h1>
               <p class="dark-slate-blue-text">Proses Cepat - Hemat Biaya - Hemat Waktu</p>
               <v-btn roundedoutlinedlarge class="mt-5 dark-slate-blue-button" @click="$vuetify.goTo('#features')">
                <span class="dark-slate-blue-text">Know more</span>

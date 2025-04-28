@@ -9,9 +9,9 @@
     "start_url": "/",
     "icons": [
       {
-        "src": "bgHero.jpg",
+        "src": "/incons/reload.png",
         "sizes": "72x72",
-        "type": "image/jpg"
+        "type": "image/png"
       }
     ]
   }
