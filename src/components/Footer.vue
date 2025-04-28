@@ -33,7 +33,7 @@ export default {
     icons: [
       {
         text: "mdi-instagram",
-        link: "https://instagram.com/_irfaazh/",
+        link: "https://instagram.com/diw.project",
       },
       {
         text: "mdi-whatsapp",
@@ -41,7 +41,7 @@ export default {
       },
       {
         text: "mdi-email",
-        link: "mailto:irfazhafir0@gmail.com", // Ganti dengan email Anda
+        link: "mailto:dreaminvitationwedding@gmail.com", // Ganti dengan email Anda
       },
     ],
   }),
