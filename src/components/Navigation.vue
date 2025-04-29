@@ -10,7 +10,7 @@
       <v-list>
         <v-list-item>
           <v-list-item-content>
-            <v-list-item-title class="title"> SideBar</v-list-item-title>
+            <v-list-item-title class="title"> DIW </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -112,9 +112,9 @@ export default {
     isXs: false,
     items: [
       ["mdi-home-outline", "Home", "#hero"],
-      ["mdi-information-outline", "Features", "#features"],
+      ["mdi-information-outline", "About", "#features"],
       // ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Pricing", "#pricing"],
+      ["mdi-currency-usd", "Price", "#pricing"],
       // ["mdi-email-outline", "Contact us", "#contact"],
     ],
   }),

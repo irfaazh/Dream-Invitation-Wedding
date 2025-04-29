@@ -7,96 +7,82 @@
             <h1 class="pt-6 font-weight-light dark-slate-blue-text display-2 text-center">Harga Katalog</h1>
             <v-divider class="my-6"></v-divider>
             <v-row>
-              <v-col class="col-12 col-sm-6 col-md-4">
+              <!-- Paket 1 -->
+              <v-col cols="12" sm="6" md="4">
                 <div class="flex-center">
                   <v-card-text>
-                    <div class="flex-center">
-                    </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2 text-center">Simple Non Cover</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text text-left">Dengan 7 foto</div>
-                    <v-divider class="my-2"/>
+                    <div class="text--disabled text-uppercase text-h5 my-2 text-center">Simple Non photo</div>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Dengan fitur lengkap</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Belum termasuk domain custom (+Rp 30.000,00 untuk domain .my.id)</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Palet warna yang beragam (client bisa milih tema warna)</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase text-h4 mt-6 blue--text text-center">Rp 120.000,00</div>
                     <div class="text-center">
                       <v-btn
-                          v-bind="size"
-                          rounded
-                          outlined
-                          color="blue"
-                          class="mt-6"
+                        rounded outlined color="blue" class="mt-6" href="https://sample-polos-diw.vercel.app" target="_blank"
+                        rel="noopener"
                       >
                         Lihat Sample
                       </v-btn>
                     </div>
                   </v-card-text>
-
-                  <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.smAndUp"></v-divider>
+                  <v-divider style="margin-right: -23px" vertical v-if="$vuetify.breakpoint.smAndUp"></v-divider>
                 </div>
-                <v-divider class="mx-4" v-if="!this.$vuetify.breakpoint.smAndUp"></v-divider>
+                <v-divider class="mx-4" v-if="!$vuetify.breakpoint.smAndUp"></v-divider>
               </v-col>
-              <v-col class="col-12 col-sm-6 col-md-4">
+
+              <!-- Paket 2 -->
+              <v-col cols="12" sm="6" md="4">
                 <div class="flex-center">
                   <v-card-text>
-                    <div class="flex-center">
-                    </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2 text-center">Simple Cover</div>
-                    <v-divider class="my-2"/>
+                    <div class="text--disabled text-uppercase text-h5 my-2 text-center">Simple with photo</div>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Dengan 7 foto</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Dengan fitur lengkap</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Belum termasuk domain custom (+Rp 30.000,00 untuk domain .my.id)</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Palet warna yang beragam (client bisa milih tema warna)</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase text-h4 mt-6 blue--text text-center">Rp 130.000,00</div>
                     <div class="text-center">
                       <v-btn
-                          v-bind="size"
-                          rounded
-                          outlined
-                          color="blue"
-                          class="mt-6"
+                        rounded outlined color="blue" class="mt-6" href="https://sample-foto-diw.vercel.app" target="_blank"
+                        rel="noopener"
                       >
                         Lihat Sample
                       </v-btn>
                     </div>
                   </v-card-text>
-                  <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.mdAndUp"></v-divider>
+                  <v-divider style="margin-right: -23px" vertical v-if="$vuetify.breakpoint.mdAndUp"></v-divider>
                 </div>
-                <v-divider class="mx-4" v-if="!this.$vuetify.breakpoint.smAndUp"></v-divider>
+                <v-divider class="mx-4" v-if="!$vuetify.breakpoint.smAndUp"></v-divider>
               </v-col>
-              <v-col class="col-12 col-md-4">
-                <v-divider v-if="this.$vuetify.breakpoint.smOnly" class="mx-4"></v-divider>
 
+              <!-- Paket 3 -->
+              <v-col cols="12" md="4">
+                <v-divider v-if="$vuetify.breakpoint.smOnly" class="mx-4"></v-divider>
                 <div class="flex-center">
                   <v-card-text>
-                    <div class="flex-center">
-                    </div>
                     <div class="text--disabled text-uppercase text-h5 my-2 text-center">Request Referensi</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Menyesuaikan foto dan tata letak</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Fitur menyesuaikan sesuai request</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Belum termasuk domain custom (+Rp 30.000,00 untuk domain .my.id)</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase blue--text text-left">Palet warna/logo boleh di sediakan oleh client atau dibuatkan oleh kami</div>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-2" />
                     <div class="text-uppercase text-h4 mt-6 blue--text text-center">Rp 110.000,00 s/d Rp 150.000,00</div>
                     <div class="text-center">
                       <v-btn
-                          v-bind="size"
-                          rounded
-                          outlined
-                          color="blue"
-                          class="mt-6"
+                        rounded outlined color="blue" class="mt-6" href="https://www.instagram.com/diw.project" target="_blank"
+                        rel="noopener"
                       >
                         Konsultasi Sekarang
                       </v-btn>
@@ -104,11 +90,13 @@
                   </v-card-text>
                 </div>
               </v-col>
+
             </v-row>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
+
     <div class="svg-border-rounded text-light">
       <svg
           xmlns="http://www.w3.org/2000/svg"
